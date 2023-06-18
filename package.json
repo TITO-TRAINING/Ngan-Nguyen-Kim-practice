@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  },
+  "dependencies": {
+    "posthtml": "^0.16.6",
+    "posthtml-base-url": "^2.0.0"
+  }
+}
