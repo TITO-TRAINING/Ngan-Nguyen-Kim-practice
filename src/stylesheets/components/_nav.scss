@@ -1,55 +1,68 @@
+@use "../abstracts/" as *;
 .container-nav{
     display: flex;
     width: 100%;
 }
 .nav-left{
-    width: 75%;
+    width: 70%;
     display: flex;
-    background-color: #1E3446;
+    background-color: $background-nav-header;
     justify-content: space-around;
     padding: 1% 0%;
 }
 .nav-logo{
-    
+    width: 10%;
     display: flex;
     img{
         width: 42px;
         height: 42px;
+        border-radius: 50%;
     }
     p{
         text-transform: uppercase;
-        color: #F6F6F6;
+        color: $text-color-header-footer;
         font-size: 22px;
         font-weight: 700;
-        padding-top: 10%;
+        padding-top: 5%;
+        padding-left: 15%;
+        font-family: $first-font;
     }
 }
 .nav-list:nth-child(2){
     align-self: center;
+    width: 45%;
 }
 .nav-list ul{
     display: flex;
+    justify-content: flex-end;
     li{
-        padding-right: 15%;
+        margin-left: 6%;
         a{
             text-decoration: none;
-            color: #FFF;
+            color: $text-color-header-footer;
             font-size: 16px;  
-            font-weight: 400;   
+            font-weight: 400; 
+            font-family: $second-font; 
         }
     }
 }
 .nav-right{
-    width: 25%;
-    background-color: #FFF;
+    width: 30%;
+    background-color: $background-color;
     padding: 1% 0%;
     align-self:center;
 }
 .sign-in{
     display: flex;
     justify-content: center;
-}
-.border{
-    border: 1px solid #D4D4D4;
-    margin: 0% 3%;
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: $second-font; 
+    .border{
+        border: 1px solid #D4D4D4;
+        margin: 0% 3%;
+    }
+    .register{
+        color: $text-color-register;
+    }
 }
