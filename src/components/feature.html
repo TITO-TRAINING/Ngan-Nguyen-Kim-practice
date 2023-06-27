@@ -7,10 +7,10 @@
                 <img src="../assets/images/Rectangle 11.png" alt="">
             </div>
             <div class="rectangle-2">
-                <div class="photo">
+                <div class="photo1">
                     <img src="../assets/images/Rectangle 9.png" alt="">
                 </div>
-                <div class="photo">
+                <div class="photo2">
                     <img src="../assets/images/Rectangle 6.png" alt="">
                 </div>
             </div>
@@ -19,12 +19,36 @@
             <img src="../assets/images/Rectangle 7.png" alt="">
         </div>
         <div class="column-3">
-            <div class="rectangle-photo">
+            <div class="rectangle-photo1">
                 <img src="../assets/images/Rectangle 8.png" alt="">
             </div>
-            <div class="rectangle-photo">
+            <div class="rectangle-photo2">
                 <img src="../assets/images/Rectangle 10.png" alt="">
             </div>
         </div>
+    </div>
+    <div class="container-course">
+        <p class="label">Learn from our 3 in 1 Professional Courses</p>
+    <p class="text">Become a Certified Real Estate Consultant</p>
+    <div class="card-course">
+        <include src="./components/card.html" 
+            locals = '{
+                "imageCourse": "../assets/images/imgCard1.png",
+                "nameCourse": "Real Estate Development and Practices in Nigeria"
+            }'>
+        </include>
+        <include src="./components/card.html" 
+            locals = '{
+                "imageCourse": "../assets/images/imgCard2.png",
+                "nameCourse": "Fundamentals about the Real Estate Industry"
+            }'>
+        </include>
+        <include src="./components/card.html" 
+            locals = '{
+                "imageCourse": "../assets/images/imgCard3.png",
+                "nameCourse": "The Art of Selling"
+            }'>
+        </include>
+    </div>
     </div>
 </div>
