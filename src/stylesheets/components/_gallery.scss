@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+.container-gallery{
+    padding: 3% 10%;
+    .label{
+        font-size: 16px;
+        color: $text-color-label;
+        font-family: $second-font;
+    }
+    .text{
+        color: $text-color;
+        font-size: 32px;
+        font-family: $second-font;
+        font-weight: 700;
+        padding: 2% 0%;
+    }
+}
+.images-gallery{
+    display: flex;
+    gap: 24px;
+    .frame{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
