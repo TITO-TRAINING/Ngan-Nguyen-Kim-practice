@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+.container-introduce{
+    display: flex;
+    padding: 5% 10%;
+    gap: 15%;
+    .introduce-text{
+        width: 50%;
+    }
+    .title{
+        font-size: 32px;
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+.text{
+    font-size: 16px;
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: 400;
+    padding: 3% 0%;
+}
+.outline{
+    display: flex;
+
+    .icon{
+        display: flex;
+        width: 70px;
+        height: 55px;
+        padding: 0;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-button;
+    }
+    .paragraph{
+        padding-left: 3%;
+    }
+    .title{
+        font-size: 18px;
+    }
+    
+}
+.introduce-img{
+    position: relative;
+    .top-image{
+        padding-top: 10%;
+    }
+    .bottom-image{
+        position: absolute;
+        top: 55%;
+        left: 70%;
+    }
+}
