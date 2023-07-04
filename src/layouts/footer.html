@@ -1,0 +1,50 @@
+<footer>
+    <div class="container-footer">
+        <div class="list-footer">
+            <p class="title">Company Name</p>
+            <div class="content">
+                <img src="../assets/icons/ic_round-location-on.png" alt="">
+                <p class="list">2118 Thornridge Cir. Dubai, UAE 35624</p>
+            </div>
+            <div class="content">
+                <img src="../assets/icons/ic_baseline-phone.png" alt="">
+                <p class="list">+33 415 65356 - 9</p>
+            </div>
+            <div class="content">
+                <img src="../assets/icons/ic_baseline-email.png" alt="">
+                <p class="list">contact@lugar.com</p>
+            </div>
+            <p class="copyright">Copyright @ 2023</p>
+        </div>
+        <div class="list-footer">
+            <p class="title">Quick Links</p>
+            <include
+                src="./components/footer-list.html"
+                locals='{
+                    "list": "[`Home`, `Our Courses`, `About us`, `Blog`]"
+                }'
+            >
+            </include>
+        </div>
+        <div class="list-footer">
+            <p class="title">Legal links</p>
+            <include
+                src="./components/footer-list.html"
+                locals='{
+                    "list": "[`Terms`, `Conditions`, `Policy`]"
+                }'
+            >
+            </include>
+        </div>
+        <div class="list-footer">
+            <p class="title">Social Media</p>
+            <include
+                src="./components/footer-list.html"
+                locals='{
+                    "list": "[`Facebook`, `Twitter`, `Youtube`, `Linkedln`]"
+                }'
+            >
+            </include>
+        </div>
+    </div>
+</footer>

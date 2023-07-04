@@ -1,0 +1,52 @@
+@use "../abstracts/" as *;
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 15%;
+    background-color: $background-nav-header;
+    margin-top: 10%;
+}
+.title{
+    font-size: 20px;
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: 700;
+    color: $text-color-header-footer;
+}
+.content{
+    display: flex;
+    img{
+        width: 14px;
+        height: 14px;
+        padding-top: 24px;
+        padding-right: 5px;
+    }
+    .list{
+        color: $text-color-footer;
+        font-size: 14px;
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: 400;
+        padding-top: 24px;
+    }
+}
+.copyright{
+    color: $text-color-footer;
+    font-size: 14px;
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 64px;
+}
+.list-footer{
+    a{
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: 400;
+        color: $text-color-footer;
+        padding-top: 24px;
+    }
+}
