@@ -1,0 +1,9 @@
+@use "variables" as *;
+@use "functions" as *;
+
+// Media-Query Mixin
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}

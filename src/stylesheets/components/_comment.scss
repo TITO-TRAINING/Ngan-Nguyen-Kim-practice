@@ -13,24 +13,42 @@
         font-family: $second-font;
         font-weight: 700;
         padding: 2% 0%;
+        @include mobile {
+            font-size: 24px;
+        }
     }
 }
 .cards-comment{
     display: flex;
     gap: 48px;
+    margin: 6% 0%;
 }
 .card{
     position: relative;
     background-color: $background-color;
     border-radius: 24px; 
     box-shadow: 0px 20px 48px 0px rgba(0, 0, 0, 0.06);
+    @include mobile {
+        text-align: center;
+    }
+}
+.two{
+    @include mobile {
+        display: none;
+    }
 }
 .card-comment{
     display: flex;
-    width: 80%;   
+    width: 80%;
+    @include mobile {
+        width: 100%;
+    }   
 }
 .text-comment{
     padding: 6%;
+    @include mobile {
+        padding-top: 20%;
+    }
 }
 .comment{
     font-size: 16px;
@@ -56,8 +74,10 @@
     position: absolute;
     left: 90%;
     top: -8%;
+    @include mobile {
+        left: 40%;
+    }
 }
 .icon{
     text-align: center;
-    padding-top: 6%;
 }

@@ -2,6 +2,7 @@
 //fonts
 $first-font: Inter;
 $second-font: Quicksand;
+
 //colors
 $text-color: #000;
 $text-color-label: #1E3446;
@@ -9,7 +10,12 @@ $text-color-header-footer: #F6F6F6;
 $text-color-footer: #BDBDBD;
 $text-color-register: #F58634;
 $text-color-button: #F6F6F6;
+
 //backgrounds
 $background-color: #FFF;
 $background-nav-header: #1E3446;
 $background-button: #F58634;
+
+// Breakpoints
+$medium: 768px;
+$mobile: calc($medium - 1px);
