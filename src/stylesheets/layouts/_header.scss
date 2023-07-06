@@ -1,0 +1,76 @@
+@use "../abstracts/" as *;
+.container-slide {
+    position: relative;
+    .background{
+        background-color: $background-nav-header;
+        width: 62%;
+        height: auto;
+        padding: 12% 0% 15% 8%;
+        border-radius: 0% 0% 70% 0%;
+        h1{
+            color: $text-color-header-footer;
+            font-size: 56px;
+            font-family: $second-font;
+            font-weight: 700;
+            width: 70%;
+        }
+        .button{
+            margin: 32px 0px;
+            .button-left{
+                border: none;
+                text-align: center;
+                font-size: 16px;
+                font-family: $second-font;
+                color: $text-color-header-footer;
+                padding: 8px;
+                gap: 10px;
+                border-radius: 10px;
+                background: #F58634;
+                margin-right: 2%;
+            }
+            .button-right{
+                border: 1px solid #F58634;
+                text-align: center;
+                font-size: 16px;
+                font-family: $second-font;
+                padding: 8px;
+                gap: 10px;
+                border-radius: 10px;
+                color: $text-color-register;
+                background-color: $background-nav-header;
+            }
+        }
+        .ellipses {
+            display: flex;
+            gap: 16px;
+            .ellipse1{
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+                background: var(--brand-color-white, #F6F6F6);
+            }
+            .ellipse2{
+                width: 16px;
+                height: 16px;
+                border-radius: 16px;
+                background: var(--brand-color-dark-grey, #627E84);
+                align-self: center;
+            }
+            .ellipse3{
+                width: 16px;
+                height: 16px;
+                border-radius: 16px;
+                background: var(--brand-color-dark-grey, #627E84);
+                align-self: center;
+            }
+        }    
+    }
+
+    .slide-images img{
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        top: 40px;
+        left: 53%;
+    }
+}

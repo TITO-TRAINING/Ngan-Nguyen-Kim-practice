@@ -1,0 +1,93 @@
+@use "../abstracts/" as *;
+.container-feature{
+    padding: 5% 10%;
+    .label{
+        font-size: 16px;
+        color: $text-color-label;
+        font-family: $second-font;
+    }
+    .text{
+        color: $text-color;
+        font-size: 32px;
+        font-family: $second-font;
+        font-weight: 700;
+        padding: 2% 0%;
+    }
+}
+.frame-images{
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+    .rectangle-1{
+        border-radius: 16px;
+        padding-bottom: 24px;
+    }
+    .rectangle-2{
+        display: flex;
+        .photo1{
+            border-radius: 16px;
+            padding-right: 24px;
+        }
+        .photo2{
+            border-radius: 16px;
+        }
+    }
+    .column-2{
+        border-radius: 16px;
+    }
+    .column-3{
+        row-gap: 24px;
+        .rectangle-photo1{
+            border-radius: 16px;
+            padding-bottom: 24px;
+        }
+        .rectangle-photo2{
+            border-radius: 16px;
+        }
+    }
+    
+}
+
+.container-course{
+    padding-top: 10%;
+}
+.card-course{
+    display: flex;
+    gap: 24px;
+}
+.container-card{
+    border: 0.5px solid var(--brand-color-light-grey, #B2B3B3);
+    padding: 16px;
+    border-radius: 16px;
+    .nameCourse{
+        font-size: 18px;
+        font-family: $second-font;
+        font-weight: 700;
+        height: 52px;
+    }
+}
+.reviewCourse{
+    display: flex;
+    gap: 4px;
+    margin: 16px 0px;
+    p{
+        font-size: 14px;
+        font-family: $second-font;
+        font-weight: 700;
+    }
+    .quantity{
+        font-size: 14px;
+        font-family: $second-font;
+    }
+}
+.btn-Course button{
+    text-align: center;
+    font-size: 16px;
+    font-family: $second-font;
+    border-radius: 8px;
+    background-color: $background-button;
+    border: none;
+    padding: 8px 24px;
+    width: 362px;
+    color: $text-color-button;
+}
