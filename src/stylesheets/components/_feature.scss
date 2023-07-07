@@ -71,7 +71,7 @@
     }
 }
 .container-card{
-    border: 0.5px solid var(--brand-color-light-grey, #B2B3B3);
+    border: 0.5px solid $border-color-card;
     padding: 16px;
     border-radius: 16px;
     .nameCourse{
@@ -79,6 +79,14 @@
         font-family: $second-font;
         font-weight: 700;
         height: 52px;
+    }
+    img{
+        @include mobile {
+            width: 100%;
+        }
+    }
+    @include mobile {
+        width: 80%;
     }
 }
 .reviewCourse{

@@ -4,18 +4,21 @@
         <div class="nav-logo">
           <img src="../assets/images/logo.jpg" alt="logo" />
           <p>prc</p>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <include
-            src="./components/nav-list.html"
-            locals='{
-            "classList": "nav-list-item list-item ",
-            "classLink": "nav-link",
-            "list": "[`Home`, `About Us`, `Ours Courses`, `Blog`, `Contact Us`]"}'>
-          </include>
-        </ul>
-      </div>
+        </div>
+        <div class="nav-button">
+          <button>Menu</button>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <include
+              src="./components/nav-list.html"
+              locals='{
+              "classList": "nav-list-item list-item ",
+              "classLink": "nav-link",
+              "list": "[`Home`, `About Us`, `Ours Courses`, `Blog`, `Contact Us`]"}'>
+            </include>
+          </ul>
+        </div>
       </div>
       <div class="nav-right">
         <div class="sign-in">
