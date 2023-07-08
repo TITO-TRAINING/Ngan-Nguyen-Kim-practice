@@ -17,6 +17,7 @@
 .images-gallery{
     display: flex;
     gap: 24px;
+    justify-content: center;
     .frame{
         display: flex;
         flex-direction: column;
