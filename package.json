@@ -6,7 +6,6 @@
   "name": "ngan-nguyen-kim-practice",
   "description": "",
   "version": "1.0.0",
-  "main": "index.js",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.2",
     "parcel": "^2.9.2",
