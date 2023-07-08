@@ -5,12 +5,19 @@
     gap: 10%;
     .introduce-text{
         width: 43%;
+        @include mobile {
+            width: 100%;
+        }
     }
     .title{
         font-size: 32px;
         font-family: $second-font;
         font-style: normal;
         font-weight: 700;
+        color: $text-color;
+    }
+    @include mobile {
+        display: block;
     }
 }
 .text{
@@ -25,7 +32,7 @@
 
     .icon{
         display: flex;
-        width: 70px;
+        width: 45%;
         height: 55px;
         padding: 0;
         border-radius: 24px;
@@ -41,6 +48,21 @@
     }
     
 }
+.button-introduce {
+    padding: 5% 35%;
+    button{
+        border-radius: 10px;
+        background-color: $background-button;
+        text-align: center;
+        font-size: 16px;
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: 400;
+        color: $text-color-button;
+        border: none;
+        padding: 8px;
+    }
+}
 .introduce-img{
     position: relative;
     .top-image{
@@ -50,5 +72,8 @@
         position: absolute;
         top: 55%;
         left: 70%;
+    }
+    @include mobile {
+        display: none;
     }
 }

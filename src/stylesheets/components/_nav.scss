@@ -9,6 +9,12 @@
     background-color: $background-nav-header;
     justify-content: space-around;
     padding: 1% 0%;
+    @include mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 3% 5%;
+    }
 }
 .nav-logo{
     width: 10%;
@@ -27,23 +33,47 @@
         padding-left: 15%;
         font-family: $first-font;
     }
+    @include mobile {
+        width: auto;
+    }
 }
-.nav-list:nth-child(2){
-    align-self: center;
+.nav-button{
+    display: none;
+    button{
+        padding: 8px 16px;
+        border-radius: 10px;
+        border: 1px solid $background-button;
+        text-align: center;
+        font-family: $second-font;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        color: $text-color-register;
+        background-color: $background-nav-header;
+    }
+    @include mobile {
+        display: block;
+    }
+}
+.nav-list {
     width: 45%;
-}
-.nav-list ul{
-    display: flex;
-    justify-content: flex-end;
-    li{
-        margin-left: 6%;
-        a{
-            text-decoration: none;
-            color: $text-color-header-footer;
-            font-size: 16px;  
-            font-weight: 400; 
-            font-family: $second-font; 
+    padding: 1% 0%;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            margin-left: 6%;
+            a{
+                text-decoration: none;
+                color: $text-color-header-footer;
+                font-size: 16px;  
+                font-weight: 400; 
+                font-family: $second-font; 
+            }
         }
+    }
+    @include mobile {
+        display: none;
     }
 }
 .nav-right{
@@ -51,6 +81,9 @@
     background-color: $background-color;
     padding: 1% 0%;
     align-self:center;
+    @include mobile {
+        display: none;
+    }
 }
 .sign-in{
     display: flex;

@@ -22,4 +22,11 @@
         flex-direction: column;
         gap: 24px;
     }
+    img{
+        width: 100%;
+    }
+    @include mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
